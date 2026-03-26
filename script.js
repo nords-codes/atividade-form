@@ -8,11 +8,11 @@ form.addEventListener('submit', function (e) {
 
     let nome = document.getElementById('nome').value;
     let email = document.getElementById('email').value;
-    let senha = document.getElementById('senha').value;
+    let telefone = document.getElementById('telefone').value;
 
     document.getElementById('erroNome').textContent = '';
     document.getElementById('erroEmail').textContent = '';
-    document.getElementById('erroSenha').textContent = '';
+    document.getElementById('erroTel').textContent = '';
 
 
     if (nome.length < 3) {
@@ -27,7 +27,7 @@ form.addEventListener('submit', function (e) {
 
     }
     if (senha.length < 6) {
-        document.getElementById('erroSenha').textContent = 'Senha invalida, deve conter 6 caracteres no minimo';
+        document.getElementById('erroTel').textContent = 'Senha invalida, deve conter 6 caracteres no minimo';
         valido = false;
     }
 
