@@ -3,7 +3,17 @@
     justify-content: center;
     display: inline-block;
     text-align: center;
+    align-items: center;
+    margin-top: auto;
 }
 body{
-    background-color: blue;
+    place-items: center;
+    background-image: ("assets/cachorros_fundo.jpg");
+}
+
+.corpo {
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
 }
