@@ -9,10 +9,25 @@ form.addEventListener('submit', function (e) {
     let nome = document.getElementById('nome').value;
     let email = document.getElementById('email').value;
     let telefone = document.getElementById('telefone').value;
+    let cpf = document.getElementById('cpf').value;
+    let idade = document.getElementById('idade').value;
+    let cidade = document.getElementById('cidade').value;
+    let moradia = document.getElementById('moradia').value;
+    let moradia_2 = document.getElementById('moradia_2').value;
+    let quintal = document.getElementById('quintal').value;
+    let quintal_2 = document.getElementById('quintal_2').value;
+    let pets = document.getElementById('pets').value;
+    let pets_2 = document.getElementById('pets_2').value;
+    let motivo = document.getElementById('motivo')
 
     document.getElementById('erroNome').textContent = '';
     document.getElementById('erroEmail').textContent = '';
     document.getElementById('erroTel').textContent = '';
+    document.getElementById('erroCpf').textContent = '';
+    document.getElementById('erroIdade').textContent = '';
+    document.getElementById('erroCidade').textContent = '';
+    document.getElementById('erroMotivo').textContent = '';
+    
 
 
     if (nome.length < 3) {
@@ -26,11 +41,12 @@ form.addEventListener('submit', function (e) {
         valido = false;
 
     }
-    if (senha.length < 6) {
-        document.getElementById('erroTel').textContent = 'Senha invalida, deve conter 6 caracteres no minimo';
+    if (telefone.length < 7) {
+        document.getElementById('erroTel').textContent = 'telefone invalida';
         valido = false;
     }
-
+    if(idade >= 18)
+        
     if (valido) {
         let resultado = document.getElementById('resultado');
 

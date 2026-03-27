@@ -8,7 +8,7 @@
 }
 body{
     place-items: center;
-    background-image: ("assets/cachorros_fundo.jpg");
+    background-image: url("assets/cachorros_fundo.jpg");
 }
 
 .corpo {
