@@ -41,11 +41,18 @@ form.addEventListener('submit', function (e) {
         valido = false;
 
     }
-    if (telefone.length < 7) {
+    if (telefone.length < 8) {
         document.getElementById('erroTel').textContent = 'telefone invalida';
         valido = false;
     }
-    if(idade >= 18)
+    if(idade < 18){
+         document.getElementById('erroIdade').textContent = 'Idade minima é 18'
+        valido = false;
+    }
+    if(motivo < 10){
+
+    }
+       
         
     if (valido) {
         let resultado = document.getElementById('resultado');
